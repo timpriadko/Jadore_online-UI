@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google" content="notranslate" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Step 5</title>
+  <link rel="stylesheet" href="js/keyboard/keyboard.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="js/keyboard/keyboard.css" />
+</head>
+
+<body>
+  <main class="main-contact bg-7 step-4 container">
+    <div class="grid-position">
+      <div class="grid-position--top">
+        <div class="logo top-logo">
+          <img src="img/dior-logo.png" alt="" />
+        </div>
+        <div class="logo">
+          <img src="img/jadore-logo.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid-position--bottom">
+        <form action="last.html" method="get" class="container" onsubmit="return false;">
+          <div class="keyboard">
+            <div class="form-row">
+              <input type="email" id="email" name="email" class="email-input"
+                placeholder="{{DK: E-mail-adresse||FI: Sähköpostiosoite}}" />
+            </div>
+          </div>
+
+          <div class="checkboxes">
+            <div class="wrap-checkbox">
+              <p class="big">
+                {{DK: Bekræft, at du accepterer vores <span class="terms terms-btn">brugsbetingelser</span> og vores <span class="terms policy-btn">privatlivspolitik</span> ved at sætte kryds her.||FI: Vahvista, että hyväksyt <span class="terms terms-btn">käyttöehtomme</span> ja <span class="terms policy-btn">tietosuojakäytäntömme</span> rastittamalla tästä.}}
+              </p>
+
+              <div class="wrap-checkbox">
+                <input type="checkbox" name="checkbox" class="checkbox" id="terms" />
+                <label for="terms"></label>
+              </div>
+            </div>
+
+            <div class="wrap-checkbox">
+              <p class="big">
+                {{DK: Bekræft venligst, at du accepterer at modtage markedsføringsmateriale om Parfums Christian Dior-tilbud, nyheder og events via e-mail.&#xA;&#xA;||FI: Vahvista, että sinulle saa lähettää markkinointiviestejä Parfums Christian Diorin tarjouksista, uutisista ja tapahtumista sähköpostitse.&#xA;&#xA;}}
+              </p>
+
+              <div class="wrap-checkbox">
+                <input type="checkbox" name="news" class="checkbox" id="news" />
+                <label for="news"></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="btns full">
+            <label class="btn small-text disabled" id="termsSubmitLabel">
+              <input type="submit" id="termsSubmit" disabled />
+              {{DK: HENT DIN PRØVE||FI: NOUDA TUOKSUNÄYTTEESI}}
+            </label>
+          </div>
+
+          <div class="wrap-info hide-desktop">
+            <p class="text-center">
+              <span
+                class="text-info terms information-provided">{{DK: Information fournies||FI: Informaatio nelikko}}</span>
+            </p>
+          </div>
+
+          <div class="wrap-info hide-mobile">
+            <p class="info">
+              {{DK: Hos Odore Limited tager vi dit privatliv og sikkerheden af dine oplysninger meget alvorligt. Vi vil kun bruge dine personlige oplysninger som anført i vores privatlivspolitik og i det omfang, det er nødvendigt for, at vi kan levere de tjenester og produkter til dig, som du har anmodet om fra os, eller for at vi kan kontakte dig med oplysninger, som vi mener, kan være relevante eller af interesse for dig, med hensyn til de tjenester og produkter, vi leverer, eller om nye tjenester eller produkter, som vi tror, du gerne vil vide noget om.&#xA;&#xA;&#xA;&#xA;||FI: Odore Limited ottaa yksityisyytesi ja tietojesi turvallisuuden vakavasti. Käytämme henkilötietojasi vain tietosuojakäytäntömme mukaisesti ja tarvittaessa voidaksemme tarjota sinulle pyytämiäsi palveluita ja tuotteita tai lähettääksemme sinulle tarjoamiamme palveluita tai tuotteita koskevia tietoja tai uutisia, joiden uskomme olevan sinulle merkityksellisiä tai kiinnostavia.&#xA;&#xA;&#xA;&#xA;}}
+            </p>
+            <p class="info">
+              {{DK: De oplysninger, du giver ovenfor, vil blive anvendt af den databehandlingsansvarlige hos Parfums Christian Dior. Dine personlige oplysninger bruges til at administrere din Dior-oplevelse, til at sende dig din resultatquiz, og med dit samtykke, til at sende dig meddelelser om Parfums Christian Dior-tilbud, nyheder og begivenheder. Du kan få flere oplysninger om dine personoplysninger og dine rettigheder i vores fortrolighedspolitik eller ved at kontakte vores databeskyttelsesansvarlige (DPO) på dpo_diormail.com.&#xA;&#xA;||FI: Yllä antamasi tiedot on tarkoitettu rekisterinpitäjänä toimivan Parfums Christian Diorin valtuutetulle henkilöstölle. Tietojasi käytetään Dior-kokemuksesi hallintaan, kyselyn tulosten lähettämiseen sinulle ja suostumuksellasi sinulle lähetettävään viestintään koskien Christian Diorin tarjouksia, uutisia ja tapahtumia. Lisätietoja henkilötiedoistasi ja oikeuksistasi saat tietosuojakäytännöstämme tai ottamalla yhteyttä tietosuojavastaavaamme osoitteessa dpo_diormail.com.&#xA;&#xA;}}
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-wrap" id="modal-terms" Dziękujemy za udział!>
+      <div class="modal">
+        <div class="modal__header">{{EN: Terms of Use}}</div>
+
+        <div class="modal__body">
+          <p class="modal__text">
+            {{EN: These terms of use (“Terms") and the documents referred to herein, together with
+              our Privacy Policy set out the basis upon which you may access, visit and make use of
+              our vending machine (“Machine”).}}
+          </p>
+
+          <p class="modal__text">
+            {{EN: Please take the time to read these Terms carefully before you start to use our
+              Machine. By using our Machine, you indicate, confirm and acknowledge that you accept
+              and agree to abide by these Terms as may be amended by us from time to time.}}
+          </p>
+
+          <p class="modal__text">
+            {{EN: You confirm that you are at least eighteen (18) years old. }}
+          </p>
+
+          <p class="modal__text">
+            {{EN: If you do not agree to or are unwilling to accept these Terms in their entirety,
+              please stop using our Machine and refrain from visiting any of them in the future. }}
+          </p>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 1.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Information about us and our Machine}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 2.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Access to our Machine}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 2.1}}</span>
+              <p class="modal__text-col">
+                {{EN: Access to our Machine is allowed on a temporary basis at our absolute
+                  discretion.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 2.2}}</span>
+              <p class="modal__text-col">
+                {{EN: We reserve the right to restrict, withdraw, change, discontinue, remove,
+                  limit, prevent or amend access to our Machine without notice.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 2.3}}</span>
+              <p class="modal__text-col">
+                {{EN: We will not be liable to you or any other third party whatsoever if, for any
+                  reason, our Machine is unavailable at any time, for any reason or for any
+                  period.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 3.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Products}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.1}}</span>
+              <p class="modal__text-col">
+                {{EN: You may choose to select samples of our products which are available free of
+                  charge (“Samples”), or to select full-price Products (“Products”).}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.2}}</span>
+              <p class="modal__text-col">
+                {{EN: Both Samples and Products are provided “as-is” and without any warranty,
+                  representation, undertaking or guarantee as to their fitness for your purpose,
+                  merchantable quality or any other implied term.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.3}}</span>
+              <p class="modal__text-col">
+                {{EN: We shall have no responsibility whatsoever for any rash, skin complaint,
+                  illness or medical condition caused or made worse by your use of any Sample or
+                  Product.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.4}}</span>
+              <p class="modal__text-col">
+                {{EN: You agree that you will only use any Sample or Product strictly in
+                  accordance with the manufacturer’s instructions.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.5}}</span>
+              <p class="modal__text-col">
+                {{EN: You may select Samples and Products in accordance with the stock
+                  availability of our Machine and we shall not be liable to you in any way in the
+                  event that any Samples or Products are not available from our Machine at any
+                  time.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.6}}</span>
+              <p class="modal__text-col">
+                {{EN: You may not re-sell any of our Samples or Products.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 4.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Payment}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.1}}</span>
+              <p class="modal__text-col">
+                {{EN: Our Samples are available to you free of charge, and Products may be
+                  purchased for the price shown on our Machine.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.2}}</span>
+              <p class="modal__text-col">
+                {{EN: Risk in and title to the Samples and the Products shall pass to you on them
+                  being dispensed after payment as been made by you.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.3}}</span>
+              <p class="modal__text-col">
+                {{EN: Payment for Products must be by debit or credit card before those Products
+                  are dispensed.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.4}}</span>
+              <p class="modal__text-col">
+                {{EN: We use a third-party payment processing provider to process payments made
+                  through our Machine. By making such payments you agree to be bound by the payment
+                  processor's terms of service, which you will be able to view prior to completing a
+                  transaction.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.5}}</span>
+              <p class="modal__text-col">
+                {{EN: We do not store any payment card data on the Machine, or otherwise, and you
+                  will be re-directed to our payment provider’s system to make your payment. That
+                  system is not operated or controlled by us in any way, even if it is branded to
+                  look like it is.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.6}}</span>
+              <p class="modal__text-col">
+                {{EN: We reserve the right to change our payment processing provider at our
+                  absolute discretion, at any time and without notice to you other than as is
+                  required for you to be able to make continuing payments to us.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 4.7}}</span>
+              <p class="modal__text-col">
+                {{EN: Products will not be dispensed without payment in full being made by you
+                  beforehand.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 5}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Changes to our Machine}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: We may, from time to time, need to make updates to our Machine, including to
+                  the software on it. In order to do so, we may suspend or restrict access to our
+                  Machine, or turn it off indefinitely.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 6.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: The Content}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 6.1}}</span>
+              <p class="modal__text-col">
+                {{EN: Any of the content, advertisements, specifications, descriptions, notices or
+                  information including, but not limited to text, images and other material
+                  (“Content”) on our Machine may be out of date at any given time and we are under
+                  no obligation to update such Content.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 6.2}}</span>
+              <p class="modal__text-col">
+                {{EN: The Content is not intended to be, nor should it be treated or considered to
+                  be, advice or guidance of any sort which can be relied upon by you or anybody
+                  else. As such, we shall accept no responsibility or liability whatsoever and
+                  howsoever arising from, or in relation to, any reliance placed on such Content by
+                  you or any other user of our Machine.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 7.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Intellectual property rights}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 7.1}}</span>
+              <p class="modal__text-col">
+                {{EN: Unless specified in these Terms, we are the sole and absolute owner or
+                  licensee of any and all intellectual property rights whatsoever including but not
+                  limited to copyright, trademarks, patents, service marks, trade names, rights in
+                  know-how, database rights, design rights and other intellectual property rights or
+                  equivalent forms of protection, of whatever nature arising anywhere in the world,
+                  whether registered or unregistered and including applications for the grant of
+                  such rights ("Intellectual Property Rights") which may arise or subsist in, or in
+                  relation to: 7.1.1 our Machine; 7.1.2 the Samples; 7.1.3 the Products; 7.1.4 the
+                  Content.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 7.2}}</span>
+              <p class="modal__text-col">
+                {{EN: Except for the limited license granted to you under these Terms for you to
+                  use our Machine, we and our licensors hereby expressly reserve any and all
+                  Intellectual Property Rights whatsoever and howsoever arising in, and in relation
+                  to, our Machine, the Samples, the Products and the Content.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 7.3}}</span>
+              <p class="modal__text-col">
+                {{EN: Provided that you comply at all times with these Terms, we hereby grant you
+                  a personal, limited, non-transferable, revocable, non-exclusive licence to use our
+                  Machine and the Content for your own purposes strictly in accordance with these
+                  Terms.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 7.4}}</span>
+              <p class="modal__text-col">
+                {{EN: Your licence to use our Machine is restricted to these Terms and it is a
+                  condition of such licence that, except to the extent expressly permitted under
+                  applicable law, you do not (and do not allow any third party to) tamper with,
+                  damage, remove or deface the machine, copy, modify, create a derivative work from,
+                  reverse engineer, reverse assemble or otherwise attempt to discover any source
+                  code or otherwise transfer any right in our Machine. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 7.5}}</span>
+              <p class="modal__text-col">
+                {{EN: Any breach of the provisions of this clause 7 will be deemed to be a
+                  material breach of these Terms and we may, at our absolute discretion immediately
+                  terminate your licence to use our Machine under the provisions of these Terms.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 8.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Limitation of liability}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 8.1}}</span>
+              <p class="modal__text-col">
+                {{EN: Every reasonable precaution and care is taken by us in relation to our
+                  Machine, our Samples and Products, and the Content. Despite this, our Machine, the
+                  Samples and Products, and the Content are provided without any guarantees,
+                  representations, conditions or warranties whatsoever as to their completeness or
+                  accuracy. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 8.2}}</span>
+              <p class="modal__text-col">
+                {{EN: To the fullest extent permitted by law, we expressly exclude any and all
+                  conditions, warranties and other terms which might otherwise be implied into these
+                  Terms by statute, common law or the law of equity.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 8.3}}</span>
+              <p class="modal__text-col">
+                {{EN: We shall accept no liability whatsoever under or in connection with these
+                  Terms (whether such liability arises in contract, tort (including negligence) or
+                  otherwise) for any of the following, whether occurring directly or indirectly:
+                  8.3.1 loss of income or revenue; 8.3.2 loss of business; 8.3.3 loss of profits or
+                  contracts; 8.3.4 loss of anticipated savings; 8.3.5 loss of data; or 8.3.6 for any
+                  indirect or consequential loss or damage of any kind whatsoever and however
+                  arising.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 8.4}}</span>
+              <p class="modal__text-col">
+                {{EN: To the fullest extent permitted by any applicable law, our total aggregate
+                  liability to you for any and all damages, losses, expenses, costs, claims or
+                  causes of action arising, by reason of or in connection with your use of (or
+                  inability to use) our Machine, any Samples or Products, or the Content, shall be
+                  limited to any sums paid by you to us during the previous twelve (12) month
+                  period.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 8.5}}</span>
+              <p class="modal__text-col">
+                {{EN: The provisions of clauses 8.1 to 8.4 inclusive do not in any way affect or
+                  limit our liability in respect of: 8.5.1 death or personal injury arising from our
+                  negligence; 8.5.2 fraud or fraudulent misrepresentation; 8.5.3 any other liability
+                  which cannot be excluded or limited under applicable law.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 9.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Indemnity}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 9.1}}</span>
+              <p class="modal__text-col">
+                {{EN: You agree to indemnify and hold us and our subsidiaries and affiliates, and
+                  our and their officers, directors, agents, co-branders or other partners, and
+                  employees, harmless from any and all losses, damages, costs, claims, expenses
+                  (including, but not limited to, reasonable legal fees) whatsoever, sums agreed to
+                  in settlement and other liabilities, arising out of any claim, demand, allegation
+                  or proceeding brought by any third party due to or arising out of: 9.1.1 your use
+                  of the Machine; 9.1.2 your use of the Content; 9.1.3 your request for Samples;
+                  9.1.4 your purchase of any Products; 9.1.5 your violation of any rights of another
+                  person or entity.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 10.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Your personal information}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                We process personal information about you strictly in accordance with our Privacy
+                Policy. By using our Machine, you consent to such processing and you warrant that
+                all data provided by you to us is complete and accurate.
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 11.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: Use of our Machine}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 11.1}}</span>
+              <p class="modal__text-col">
+                {{EN: You may only access and use our Machine for lawful purposes.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 11.2}}</span>
+              <p class="modal__text-col">
+                {{EN: Under no circumstances may you access or use our Machine: 11.2.1 in any way
+                  that breaches, or could breach, any applicable local, national or international
+                  law, rule or regulation; 11.2.2 in any way that is, or could be, unlawful or
+                  fraudulent, or has any unlawful or fraudulent intent, purpose or effect;}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 11.3}}</span>
+              <p class="modal__text-col">
+                {{EN: You also hereby agree, acknowledge and confirm that you may not, under any
+                  circumstances: 11.3.1 reproduce, duplicate, copy or re-sell all or any part of our
+                  Machine or our Content; 11.3.2 access without authority, interfere with, damage,
+                  remove, attack or disrupt all or any part of our Machine, our Content or any other
+                  equipment or network, whether owned or operated by us or any third party.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 12.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Termination of these Terms and suspension of access and/or use}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 12.1}}</span>
+              <p class="modal__text-col">
+                {{EN: If, in our absolute opinion, your access to our Machine and/or our Content
+                  has breached these Terms, then we may, at our absolute discretion: 12.1.1
+                  temporarily or permanently withdraw your right to access or use our Machine or our
+                  Content; 12.1.2 issue a warning to you; 12.1.3 issue legal proceedings against
+                  you, including but not limited to, a claim for reimbursement of all costs on an
+                  indemnity basis (including, but not limited to, reasonable administrative and
+                  legal costs) resulting from your breach of these Terms; 12.1.4 disclose such
+                  information to law enforcement authorities as we reasonably feel is necessary; or
+                  12.1.5 take any such other action as we consider appropriate.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 12.2}}</span>
+              <p class="modal__text-col">
+                {{EN: We hereby exclude any and all liability whatsoever and howsoever arising,
+                  for actions taken in response to breaches of these Terms.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 13.}}</span>
+              <p class="modal__text-col modal__text-col_header">{{EN: General matters}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.1}}</span>
+              <p class="modal__text-col">
+                {{EN: A failure or delay by us to exercise any right or remedy provided under
+                  these Terms or by law shall not constitute a waiver of that or any other right or
+                  remedy, nor shall it prevent or restrict any further exercise of that or any other
+                  right or remedy. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.2}}</span>
+              <p class="modal__text-col">
+                {{EN: No single or partial exercise of any right or remedy provided under these
+                  Terms or by law shall prevent or restrict the further exercise of that or any
+                  other right or remedy..}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.3}}</span>
+              <p class="modal__text-col">
+                {{EN: Nothing in these Terms is intended to, or shall be deemed to, establish any
+                  partnership or joint venture between the parties or constitute any party the agent
+                  of another party. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.4}}</span>
+              <p class="modal__text-col">
+                {{EN: A person who is not a party to this Agreement shall not have any rights
+                  under the Contracts (Rights of Third Parties) Act 1999 to enforce any term of this
+                  Agreement.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.5}}</span>
+              <p class="modal__text-col">
+                {{EN: These Terms and any dispute or claim arising out of or in connection with it
+                  or its subject matter or formation (including non-contractual disputes or claims)
+                  shall be governed by and construed in accordance with the laws of England and
+                  Wales.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 13.6}}</span>
+              <p class="modal__text-col">
+                {{EN: Each party irrevocably agrees that the courts of England and Wales shall
+                  have exclusive jurisdiction to settle any dispute or claim that arises out of or
+                  in connection with these Terms or its subject matter or formation.}}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button type="button" class="modal_btn ui-close-modal">{{EN: Ok }}</button>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+
+    <div class="modal-wrap" id="modal-policy">
+      <div class="modal">
+        <div class="modal__header">{{EN: Privacy policy}}</div>
+
+        <div class="modal__body">
+          <p class="modal__text">
+            {{EN: Parfums Christian Dior pays attention to the processing, confidentiality and
+              safety of your personal data. }}
+          </p>
+
+          <p class="modal__text">
+            {{EN: This aim of this privacy charter is to provide you with clear, simple and
+              complete information about how we process the personal data you give us or the data we
+              may collect while you are browsing our website, how it may be transferred to third
+              parties and your rights and options to control your personal information and protect
+              your privacy. }}
+          </p>
+
+          <p class="modal__text">
+            {{EN: Parfums Christian Dior, a LVMH company with headquarters located at 190-192
+              Avenue Charles de Gaulle, registered in the Neuilly trade and companies register under
+              no. 55206518700130, is the data controller of personal data collected on the website
+              https://www.dior.com in the sense of regulations applying to personal data, in
+              particular Regulation (EU) 2016/679 on the protection of natural persons with regard
+              to the processing of personal data and the free movement of such data (hereinafter the
+              "GDPR").}}
+          </p>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 1.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: What is personal data? }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Personal data is any information about an identified physical person or a
+                  physical person that may be directly or indirectly identified via an
+                  identification number or one or more elements particular to them, such as their
+                  last name, first name, date of birth, customer number, order number, photo, etc.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 2.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: When can we collect your personal data? }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">{{EN: We can collect your personal data when you: }}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: Experience the Sampling Machine in store and/or in corners;}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: Subscribe to our newsletter to receive information on our offers, news and
+                  events by e-mail.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 3.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: What personal data might we collect? }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.1}}</span>
+              <p class="modal__text-col">
+                {{EN: As part of the services we provide, we may need to collect certain data
+                  directly from you using electronic forms on our website, mobile apps or in
+                  selected stores, or in paper form, for a range of purposes (see IV for a list of
+                  processing purposes).}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">{{EN: Information we might collect include your: }}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">{{EN: name;}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">{{EN: age;}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: contact information such as email addresses and telephone numbers;}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: demographic information such as post code, preferences, and interests;}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">{{EN: IP address.}}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Personal data essential to Parfums Christian Dior is marked with an asterisk
+                  on all personal data collection forms on our website, in electronic form at some
+                  of our counters and stores, as well as off-line in paper form. If you do not fill
+                  in these compulsory fields, Parfums Christian Dior will probably be unable to
+                  respond to your request and/or provide you with the requested services. Other
+                  information is optional and enables us to get to know you better and improve our
+                  communications and services with respect to you. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: 3.2}}</span>
+              <p class="modal__text-col">
+                {{EN: We may also collect certain data generated by your purchases of products or
+                  services, online or in stores, particularly information regarding the amount and
+                  type of your purchases.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 4.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: For what purpose is your personal data collected and used? }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Parfums Christian Dior processes your data to: }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: Supplying our services to you (please note that we require your personal
+                  data in order to enter into a contract with you);}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: Personalising and tailoring our services for you; and}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: Subject to your consent, send you information on our offers, news and events
+                  on your chosen communication media.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 5.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: What legal grounds legitimise the processing of your data?}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Parfums Christian Dior processes your personal information: }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: supplying our services to you (please note that we require your personal
+                  data in order to enter into a contract with you);}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: when you have given your consent for the processing of your data, especially
+                  for the purposes of managing our sales prospection, and of your browsing data via
+                  cookies, etc. }}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 6.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Who are the recipients of your personal data? }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Your personal data is processed by the personnel of Parfums Christian Dior.
+                  We ensure that only authorised persons within Parfums Christian Dior have access
+                  to your personal data when this is necessary for the purpose of managing our
+                  commercial relations or meeting our legal obligations. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">{{EN: We may also share your personal data with; }}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: other entities of the LVMH Group, with some of these entities acting as data
+                  processors;}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: our marketing solution service provider: ODORE.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Lastly, Parfums christian Dior may need to share your personal data with
+                  third parties to meet its legal, regulatory or treaty obligations, or to respond
+                  to requests from authorised legal authorities. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">{{EN: Specific to Dior: }}</p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Parfums Christian Dior and Christian Dior Couture may share some of your
+                  personal data, including data collected via cookies, for the shared management of
+                  the website www.dior.com, particularly to allow you to have a single customer
+                  account on this website, update the information on your customer account and
+                  customise communication about Christian Dior products that we may send you. }}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 7.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Transferring data abroad}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Some recipients of your personal data may be located abroad, including
+                  outside of the European Economic Area. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: All data transfers outside of the European Economic Area are subject to
+                  appropriate guarantees, especially contractual, technical and organisational
+                  guarantees, that comply with applicable regulations relating to the protection of
+                  personal data. }}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 8.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: How long do we keep your data?}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Legal periods of retention defined by Parfums Christian Dior comply with the
+                  recommendations of CNIL and/or the legal obligations covering Parfums Christian
+                  Dior. }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: As a general principle, your personal data will be retained in our client
+                  database: }}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: If you are a “client” (i.e. you have already purchased a Parfums Christian
+                  Dior product): for no more than 10 years after your first purchase for customer
+                  relationship management, but no more than 5 years for business development; this
+                  period will be renewed each time you interact with Parfums Christian Dior (e.g. a
+                  purchase)}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number">{{EN: -}}</span>
+              <p class="modal__text-col">
+                {{EN: If you are a “prospect” (i.e. you have never purchased a Parfums Christian
+                  Dior product, but you are interested in Parfums Christian Dior brand): for no more
+                  than 3 years; this period will be renewed each time you interact with Parfums
+                  Christian Dior (e.g. when participating in an event)}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: When we no longer need to use your personal data, it is removed from our
+                  systems and records or anonymized so that you can no longer be identified from
+                  it.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 9.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: What are your rights and how can you exercise them?}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: Under current regulations, particularly the GDPR, you have the right to
+                  access and correct your personal data, request erasure, object to processing on
+                  legitimate grounds and obtain limitation or portability, insofar as this is
+                  applicable.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: You can exercise these rights directly with Parfums Christian Dior by
+                  sending an email to Dpo_france@diormail.com or a non-registered letter by post to
+                  190-192 Avenue Charles de Gaulle, 92200 Neuilly-sur-Seine including a document
+                  proving your identity.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: If, at any time, you no longer wish to receive details of our offers, news
+                  and events, you can unsubscribe using the hypertext link provided for this purpose
+                  in each mail we send you. You can also or send a non-registered letter to 190-192
+                  Avenue Charles de Gaulle, 92200 Neuilly-sur-Seine.}}
+              </p>
+            </div>
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: You may also lodge a complaint with the CNIL at 3 Place de Fontenoy - TSA
+                  80715 - 75334 PARIS CEDEX 07. Tel: 01 53 73 22 22.}}
+              </p>
+            </div>
+          </div>
+
+          <div class="modal__text">
+            <div class="modal__row">
+              <span class="modal__number modal__number_header">{{EN: 10.}}</span>
+              <p class="modal__text-col modal__text-col_header">
+                {{EN: Contact details of the Data Protection Officer (DPO) and your right to lodge
+                  a complaint}}
+              </p>
+            </div>
+
+            <div class="modal__row">
+              <span class="modal__number"></span>
+              <p class="modal__text-col">
+                {{EN: For all questions relating to the collection and processing of your data by
+                  Parfums Christian Dior, you can contact the Parfums Christian Dior Data Protection
+                  Officer at Dpo_france@diormail.com.}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- end body -->
+
+        <div class="modal__footer">
+          <button type="button" class="modal_btn ui-close-modal">{{EN: Ok }}</button>
+        </div>
+      </div>
+      <!-- end modal -->
+    </div>
+
+    <div class="modal-wrap" id="modal-information">
+      <div class="modal">
+        <div class="modal__body">
+          <p>
+            {{DK: Hos Odore Limited tager vi dit privatliv og sikkerheden af dine oplysninger meget alvorligt. Vi vil kun bruge dine personlige oplysninger som anført i vores privatlivspolitik og i det omfang, det er nødvendigt for, at vi kan levere de tjenester og produkter til dig, som du har anmodet om fra os, eller for at vi kan kontakte dig med oplysninger, som vi mener, kan være relevante eller af interesse for dig, med hensyn til de tjenester og produkter, vi leverer, eller om nye tjenester eller produkter, som vi tror, du gerne vil vide noget om.&#xA;&#xA;&#xA;&#xA;||FI: Odore Limited ottaa yksityisyytesi ja tietojesi turvallisuuden vakavasti. Käytämme henkilötietojasi vain tietosuojakäytäntömme mukaisesti ja tarvittaessa voidaksemme tarjota sinulle pyytämiäsi palveluita ja tuotteita tai lähettääksemme sinulle tarjoamiamme palveluita tai tuotteita koskevia tietoja tai uutisia, joiden uskomme olevan sinulle merkityksellisiä tai kiinnostavia.&#xA;&#xA;&#xA;&#xA;}}
+          </p>
+          <p>
+            {{DK: De oplysninger, du giver ovenfor, vil blive anvendt af den databehandlingsansvarlige hos Parfums Christian Dior. Dine personlige oplysninger bruges til at administrere din Dior-oplevelse, til at sende dig din resultatquiz, og med dit samtykke, til at sende dig meddelelser om Parfums Christian Dior-tilbud, nyheder og begivenheder. Du kan få flere oplysninger om dine personoplysninger og dine rettigheder i vores fortrolighedspolitik eller ved at kontakte vores databeskyttelsesansvarlige (DPO) på dpo_diormail.com.&#xA;&#xA;||FI: Yllä antamasi tiedot on tarkoitettu rekisterinpitäjänä toimivan Parfums Christian Diorin valtuutetulle henkilöstölle. Tietojasi käytetään Dior-kokemuksesi hallintaan, kyselyn tulosten lähettämiseen sinulle ja suostumuksellasi sinulle lähetettävään viestintään koskien Christian Diorin tarjouksia, uutisia ja tapahtumia. Lisätietoja henkilötiedoistasi ja oikeuksistasi saat tietosuojakäytännöstämme tai ottamalla yhteyttä tietosuojavastaavaamme osoitteessa dpo_diormail.com.&#xA;&#xA;}}
+          </p>
+        </div>
+        <!-- end body -->
+
+        <div class="modal__footer">
+          <button type="button" class="modal_btn ui-close-modal">{{EN: Ok }}</button>
+        </div>
+      </div>
+      <!-- end modal -->
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/keyboard/jquery.keyboard.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>

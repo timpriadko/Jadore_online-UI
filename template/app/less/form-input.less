@@ -1,0 +1,81 @@
+@import url(./default.less);
+
+// form-input
+.form-group {
+    position:relative;
+    width: 45%;
+
+    .input-label {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+
+        svg {
+            margin-right: 10px;
+        }
+
+        &:hover {
+            svg {
+                path {
+                    fill: #ff5e00;
+                    transition: .2s;
+                }
+            }
+            
+            span {
+                color: #ff5e00;
+                transition: .2s;
+            }
+        }
+    }
+
+    &.required {
+        .form-input {
+            border-bottom: 1px solid #fa5916;
+            box-shadow: none;
+        }
+    }
+
+    &.invalid-email {
+        .form-input {
+            border-bottom: 1px solid #fa5916;
+            box-shadow: none;
+        }
+    }
+    
+    .form-label {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 14px;
+        background-color: transparent;
+        transition: transform 150ms ease-out, font-size 150ms ease-out;
+        color: #CCCCCC;
+        cursor: inherit;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.044px;
+        color: #fff;
+        font-family: 'Cochin', sans-serif;
+        text-transform: uppercase;
+    }
+    
+    .form-input {
+        position: relative;
+        z-index: 2;
+        padding: 12px 0px 5px 0;
+        width: 100%;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid #e5e5e5;
+        transition: box-shadow 150ms ease-out;
+        background-color: transparent;
+        border-radius: 0;
+        color: #fff;
+    }
+}
+.focused .form-label {
+    transform: translateY(-125%);
+    font-size: 7px;
+}

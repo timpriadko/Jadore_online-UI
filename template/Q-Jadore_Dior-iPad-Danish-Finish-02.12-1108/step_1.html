@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Step 2</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+    <main class="main-contact bg-black container language-page">
+        <div class="grid-position">
+            <div class="grid-position--top">
+                <div class="logo">
+                    <img src="img/dior-logo.png" alt="" />
+                </div>
+
+                <div class="step-block step-block__center">
+                    <h2 class="text-center">
+                        {{EN: Please choose your language.}}
+                    </h2>
+                </div>
+
+                <form action="step_2.html" method="get">
+                    <input type="hidden" name="question" value="Language" />
+
+                    <div class="btns column">
+                        <label class="btn">
+                            <input type="submit" name="answer" value="DK" hidden="" />
+
+                            {{DK: DANSK }}
+                        </label>
+
+                        <label class="btn">
+                            <input type="submit" name="answer" value="FI" hidden="" />
+
+                            {{FI: FINNISH}}
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

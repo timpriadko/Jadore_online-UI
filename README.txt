@@ -1,0 +1,2 @@
+https://odore.ml/#/campaigns/d8074eb7-cc12-4539-921e-41cc765219e5 - онлайн кампания на стейдже
+https://sa.odore.ml/admin/bo/campaign/d8074eb7-cc12-4539-921e-41cc765219e5/change/?_changelist_filters=p%3D2 - онлайн кампания в Джанго админке на стейдже
